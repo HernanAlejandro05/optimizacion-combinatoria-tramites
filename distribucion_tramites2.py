@@ -58,5 +58,7 @@ print(len(soluciones_96))
 print(soluciones_96)
 
 df = pd.DataFrame.from_dict(soluciones_96).fillna(0)
+df == 0
+df = df[~(df == 0).any(axis=1)]
 print(df)
-df.to_excel('combinaciones_96_fijas.xlsx')
+df.to_excel('combinaciones_96_fijas.xlsx')  #El diccionario  resultante se guarda en un archivo excel

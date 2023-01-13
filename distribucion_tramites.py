@@ -58,5 +58,7 @@ print(len(soluciones_160))
 print(soluciones_160)
 
 df = pd.DataFrame.from_dict(soluciones_160).fillna(0) #de la libreria pandas, llamo a un dataframe para almacenar el diccionario 
+df == 0  #Creo un dataframe booleano
+df = df[~(df == 0).any(axis=1)]
 print (df)
 df.to_excel('combinaciones_160_fijas.xlsx')   #El diccionario  resultante se guarda en un archivo excel
