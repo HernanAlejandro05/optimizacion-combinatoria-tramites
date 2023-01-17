@@ -17,9 +17,9 @@ count = 0
 for row in matriz:
     _, t5, t4, t3, t2, t1 = row
     
-    condicion_1 = (t5 >= 10 and t5 <= 24)
+    condicion_1 = (t5 >= 8 and t5 <= 22)
     condicion_2 = (t4 >= 9 and t4 <= 15)
-    condicion_3 = (t3 >= 6 and t3 <= 12)
+    condicion_3 = (t3 >= 4 and t3 <= 10)
     condicion_4 = (t2 >= 3 and t2 <= 6)
     condicion_5 = (t1 >= 2 and t1 <= 4)
     
